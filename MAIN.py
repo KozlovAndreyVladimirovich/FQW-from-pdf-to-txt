@@ -26,7 +26,10 @@ for ii,i in enumerate(mas):
                 file = open(output,'w',encoding='utf-8',errors='ignore')
                 file.write(text)
                 file.close()
-
+                
+                if data[0] is None:
+                    pg.add([j,data[0],data[1],data[2],literature])
+                    continue
                 for k in range(0,len(data[0])-1):
                     if data[0][len(data[0])-1]!='':
                         data[0][k] = '!'+data[0][k]
