@@ -1,7 +1,7 @@
 import psycopg2 as ps
 
 def add(data):
-    connection = ps.connect(dbname='test',user='postgres',password='ehcyhnf',host='localhost')
+    connection = ps.connect(dbname='имя_бд',user='postgres',password='пароль',host='localhost')
     cursor = connection.cursor()
     for i in range(0,len(data)):
         if data[i] is None:
