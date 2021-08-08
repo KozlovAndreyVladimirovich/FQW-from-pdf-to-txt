@@ -3,9 +3,10 @@ import title
 import os
 import lit
 import pg
+# на входе папка, которая содержит папки, которые содержат pdf файлы
+# на выходе папка с txt файлами
 
-#path = 'input\\'
-path = 'IN\\'
+path = 'input\\'
 out = 'txt\\'
 if not os.path.isdir(out):
     os.makedirs(out)
